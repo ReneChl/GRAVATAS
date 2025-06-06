@@ -11,5 +11,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ;
+    font-family: 'Robo','sana-serif';
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+}   
+
+/* estelizando html */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg); /*fundo de body color negro, esto color viene de arriba que esta dentro de root*/
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: sticky;
+    background: var(--bg);
+    top: 0;
+    left: 0;
+    z-index: 999;
+
 }
