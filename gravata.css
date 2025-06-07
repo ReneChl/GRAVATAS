@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --main-color:#da190f;
-    --bg: #13131a;
+    --bg: hsla(167, 88%, 20%, 0.761);
     --br-card: #0c0c14;
     --border: 0.1rem solid grey;
 
@@ -43,4 +43,58 @@ header {
     left: 0;
     z-index: 999;
 
+}
+
+/*estilizando imagen que esta dentro de header que esta ancorado*/
+.logo img {
+    height: 6rem;/*define altura de logo*/
+    border-radius: 100%;
+}
+
+.ul-header {
+    display: flex;
+    gap: 15px;
+}
+
+.ul-header a {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.ul-header li a:hover {
+    color: var(--main-color); /*muda a cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color); /*adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*adiciona espaçamento inferior no hover*/
+
+}
+
+.ul-header li {
+    list-style: none;/*esto é para tirar os pontos nas listas*/
+
+}
+
+.icons {
+    /*NÃO ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA*/
+    display: flex;
+    align-items: center;
+    gap: 15px;/*es para separar los inconos*/
+}
+
+.icons i {
+    color: white;/*cor branca para ícons*/
+    cursor: pointer;/*altera o curso ao passar sobre ícone*/
+    font-size: 2.5rem;/*tamanho dos ícones*/
+
+}
+
+.icons i:hover {
+    color: var(--main-color);/*muda a cor ícone ao passar o mause*/
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 85vh;
+    background: url(imagens/imagen\ fundo\ gravatas.jpg) no-repeat;
 }
