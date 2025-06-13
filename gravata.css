@@ -47,7 +47,11 @@ header {
 
 /*estilizando imagen que esta dentro de header que esta ancorado*/
 .logo img {
+<<<<<<< Updated upstream
     height: 6rem;/*define altura de logo*/
+=======
+    height: 6.5rem;/*define altura de logo*/
+>>>>>>> Stashed changes
     border-radius: 100%;
 }
 
@@ -57,6 +61,7 @@ header {
 }
 
 .ul-header a {
+<<<<<<< Updated upstream
     color: #fff;
     font-size: 1.6rem;
 }
@@ -98,3 +103,37 @@ header {
     min-height: 85vh;
     background: url(imagens/fotofundo\ gravatas\ 2.jpg) no-repeat;
 }
+=======
+     color: #fff;
+     font-size: 1.6rem;
+}
+
+.ul-header li a:hover {
+    color: var(--main-color);/*muda cor do hover*/
+    border-bottom: 0.1rem solid var(--main-color);/*Adiciona uma linha inferior no hover*/
+    padding-bottom: 0.5rem;/*adiciona espaçamento inferior no hover*/
+}
+
+.ul-header li {
+    list-style: none;/*esto é para tirar os puntos de as listas*/
+}
+
+.icons {
+    /*NÃO  ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
+    display: flex;
+    align-items:   center;
+    gap: 15px;/*É para separar os incons*/
+}
+
+.icons i {
+    color: white;/*cor branca para icons*/
+    cursor: pointer;/*Altera o cursos ao passar sobre o incons*/
+    font-size: 2.5rem;/*tamanho dis ícones*/
+}
+
+.icons i:hover {
+    color: var(--main-color);/*muda a cor do í  cone ao passar o mause*/
+}
+
+
+>>>>>>> Stashed changes
