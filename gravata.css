@@ -95,6 +95,64 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    min-height: 85vh;
-    background: url(imagens/fotofundo\ gravatas\ 2.jpg) no-repeat;
+    min-height: 85vh;/*altura mínima da sessão*/
+    background: url(imagens/foto\ fundo01ac.jpg) no-repeat;
+    background-size: cover;/*preenchimento da imagem*/
+    background-position: center;/*posicio0namento de imagen*/
+    border-bottom: var(--border);/*adiciona borda inferior*/
 }
+
+
+.content {
+    max-width: 60rem;/**/
+    position: relative;
+    z-index: 2;
+}
+
+.content h3 {
+    font-size: 6rem;/*tamanho do título*/
+    text-transform: uppercase;/*deixando o texto em caixa alta*/
+    color: #fff; /*cor da letra branca*/
+}
+
+.content p {
+    font-size: 2rem;/*tamanho da fonte para parágrafos*/
+    font-weight: lighter;/*peso da fonte mais leve*/
+    line-height: 1.8rem;/*esoaçamento entre as linhas*/
+    padding: 1rem 0;/*espaçamento interno*/
+    color: #fff /*cor da letra branca*/
+}
+
+/* https://www.w3schools.com/cssref/sel_before.php */
+
+#home::before {
+    content: "";/*adiciona psudo-elmento vazio*/
+    position: absolute;/*permite posicionamneto absoluto*/
+    top: 0;/*alinha pseudo-elemento ao toopo*/
+    left: 0;/*alinha a ezquerda*/
+    width: 100%;/*ocupa toda a largura*/
+    height: 100%;/*ocupa tota a altura*/
+    background-color: rgba(0, 0, 0, 0.5);/*adiciona sobreposição escura*/
+    z-index: 1;/*posiciona abaixo do conteúdo*/
+
+}
+
+section {
+    padding: 2rem 7%;/*garante espaçamento interno nas sessões (resposividade)*/
+
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
