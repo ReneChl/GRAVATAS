@@ -47,11 +47,7 @@ header {
 
 /*estilizando imagen que esta dentro de header que esta ancorado*/
 .logo img {
-<<<<<<< Updated upstream
     height: 6rem;/*define altura de logo*/
-=======
-    height: 6.5rem;/*define altura de logo*/
->>>>>>> Stashed changes
     border-radius: 100%;
 }
 
@@ -61,7 +57,6 @@ header {
 }
 
 .ul-header a {
-<<<<<<< Updated upstream
     color: #fff;
     font-size: 1.6rem;
 }
@@ -150,45 +145,30 @@ section {
 .heading {
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3rem;
-    font-size: 4rem;
+    text-transform: uppercase;/*texto em caiza alata*/
+    padding-bottom: 3rem;/*espaçamento interno em relação ao título*/
+    font-size: 4rem;/*=40px*/
 }
 
 .heading span {
     color: var(--main-color);
-    text-transform: uppercase;
-=======
-     color: #fff;
-     font-size: 1.6rem;
+    text-transform: uppercase;/*texto caixa alta*/
 }
 
-.ul-header li a:hover {
-    color: var(--main-color);/*muda cor do hover*/
-    border-bottom: 0.1rem solid var(--main-color);/*Adiciona uma linha inferior no hover*/
-    padding-bottom: 0.5rem;/*adiciona espaçamento inferior no hover*/
+/* estilizando botões */
+
+.btn {
+    margin-top: rem;
+    padding: 0.9em 3rem; /*preechimento interno superior e inferior */
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+    display: inline-block;/*deixando a formatação do botão em formato do (Bloco)*/
 }
 
-.ul-header li {
-    list-style: none;/*esto é para tirar os puntos de as listas*/
-}
+/* ttps/www.w3schools.com/css/tryit.asp? */
+    /* filename=trycss_inline-block*/ 
 
-.icons {
-    /*NÃO  ESTOU MEXENDO NOS ICONES, E SIM NA CAIXA, OK??*/
-    display: flex;
-    align-items:   center;
-    gap: 15px;/*É para separar os incons*/
-}
-
-.icons i {
-    color: white;/*cor branca para icons*/
-    cursor: pointer;/*Altera o cursos ao passar sobre o incons*/
-    font-size: 2.5rem;/*tamanho dis ícones*/
-}
-
-.icons i:hover {
-    color: var(--main-color);/*muda a cor do í  cone ao passar o mause*/
->>>>>>> Stashed changes
-}
 
 
