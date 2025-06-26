@@ -209,7 +209,7 @@ section {
 /*estilizando clas menu juntando con container un solo*/
 .container {
     display: grid;/*Organiza os elementos internos em um layout de grade*/
-    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));/*Cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));/*Cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
     gap: 1.5rem;/*Define o espaçamento entre os itens da grade*/
 }
 
@@ -259,6 +259,246 @@ section {
 
 /*estilizando PROMOÇÕES*/
 /*estelizando a DIV pai*/
+.products .box-container {
+    display: grid;/*organiza os elementos em uma grade*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));/*cria columnas flexíveis com largura mínima de 30rem e máxima proporcional*/
+    gap: 1.5rem;/*define o espaçamento entre os itens da grade*/
+}
+
+/*estilizando os box(as caixas)*/
+.box-container .box {
+    text-align: center;/*centraliza os textos*/
+    border: var(--border);/*aplica uma borda ao redor da caixa*/
+    padding: 2rem;/*adiciona espaçamento interno nas caixas*/
+}
+
+/*estilizando os incons*/
+.icons a i {
+    width: 3rem;/*define a altura dos incones*/
+    height: 3rem;/*largura dos incones*/
+    line-height: 3rem;/*distancia dos conteúdos/altura da linha*/
+    font-size: 1.7rem;/*define o tamanho da fuente para os ícones*/
+    border: var(--border);/*aplica uma borda ao redor dos icones*/
+    color: #fff;/*define a cor branca para os icones*/
+    margin: 0.3rem;/*adiciona espaçamento entre os ícones*/
+}
+
+.icons a i:hover {
+    color: var(--main-color);/*altura o fundo dos incones para a cor principal*/
+}
+
+.box .image {
+    padding: 2rem;/*adiciona espaçamento vertical*/
+}
+
+.box .image img {
+    height: 25rem;/*altura das imagens*/
+}
+
+/*estilizando da caixa "content"*/
+.box .content {
+    color: #fff;/*define a cor branca para o conteúdo textual*/
+    font-size: 2.5rem;/*define o tamanho da fuente o conteúdo*/
+}
+
+.box-container .stars {
+    padding: 1.5rem;/*adiciona espaçamento ao redor das estrelas*/
+}
+
+.box-container .stars i {
+    font-size: 1.9rem;/*tamanhodas estrelas*/
+    color: var(--main-color);/*aplica a cor principal as estrelas*/
+}
+
+.box-container .price {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.box-container .price span {
+    font-weight: lighter;/*aplica fuente mais fina para o texto*/
+    font-size: 1.5rem;/*aplica fuente mais fina para o texto*/
+    text-transform: lowercase;/*trasforma o texto adicional para letras minúsculas*/
+}
+
+.content h3 {
+    font-size: 2rem;/*define o tamanho da fuente*/
+}
+
+/*estelizando ultima parte de caixas*/
+/*formatação das caixas, aqui estamos mexendo elemento pai*/
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
+    gap: 1.5rem;
+}
+
+/* aqui estamos alterando a caixa (box) */
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;/*centraliza os textos*/
+    padding: 3rem 2rem;/*adiona espaçamento interno nas caixas*/
+}
+
+/* estilizando parágrafo */
+.review .box-container .box p {
+    font-size: 1.7rem;/*define o tamahno da fonte*/
+    line-height: 1.8;/*espaçamento entre as linhas*/
+    color: #ccc;/*cor da letra*/
+    padding: 2rem 0;/*add espaçamento vertical ao parágrafo*/
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;/*add espaçamento vertical zerando as laterais */
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.user {
+    height: 10rem; /*defiene altura de imagem do usuario*/
+    width: 10rem;/*largura da imagem*/
+    border-radius: 50%;
+    object-fit: cover;/*ajusta a imagem para preencher o espaço disponível/container sem distorção*/
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+#map-google {
+    width: 100vw;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px  rgba(0,0,0, 0.3);
+    border: 2px solid #4caf50;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+/* estelizando footer */
+.title-footer {
+    text-align: center;
+    text-transform: uppercase;/*caixa alta*/
+    font-size: 2rem;/*equivale a 20px*/
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.title-footer span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+footer {
+    background: var(--bg);
+    text-align: center;
+    padding: 4rem 0;/*add espaçamento interno vertical ao rodapé*/
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 7%;/*add espaçamento interno horizontal usando porcentagem*/
+}
+
+.content-1 {
+    flex: 1 1 25rem;/*define tamanho flexível com largura mínima de 25rem*/
+    margin: 1rem;/*add espaçamento ao redor do contúedo*/
+}
+
+.content-1 ul {
+    list-style: none;
+    padding: 0;/*remove espaçamento interno padrão*/
+}
+
+.content-1 ul li {
+    margin-bottom: 1rem;/*add espaçamento interior entre os itens da lista*/
+}
+
+.content-1 ul li a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.content-1 ul li a:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a i {
+    color: #ccc;
+    font-size: 3rem;
+}
+
+.social-links a i:hover {
+    color: var(--main-color);
+    transition: 0.8s;
+}
+
+.footer-bottom {
+    text-align: center;/*Centraliza o texto*/
+    padding: 1rem 0;/*Adiciona espaçamento interno vertical*/
+    font-size: 1.6rem;/*define o tamanho da fonte*/
+    border-top: var(--border);/*adiciona uma borda supewrior*/
+    margin-top: 2rem;/*Adiciona espaço acima do rodapé inferior*/
+    color: #ccc;/*Define a cor do texto como cinza claro*/   
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%; /* esta desminuido de aquel html que era de 62.5%. eneste caso va permanecer con 55% es lo que encaja en simulador de movel ou celular */
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+     /*colocar código para esconder o menu*/
+     .ul-header {
+
+     }
+    
+}
+
+/*ESTTILIZANDO WHATSSAPP*/
+.botao-zap {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 40%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    z-index: 1000;
+
+}
+
+.botao-zap a i {
+    color: white;
+}
+
 
 
 
