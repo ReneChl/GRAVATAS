@@ -280,8 +280,11 @@ section {
 }
 
 .container .box img {
-    height: 18rem;/*define a altura da imagem*/
-    border-radius: 100%;/*tornar a imagem circular*/
+    height: 28rem;/*define a altura da imagem*/
+   /* border-radius: 100%;/*tornar a imagem circular*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .container .box h2 {
