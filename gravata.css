@@ -1,5 +1,8 @@
 /*Importa a fonte "ROBOTO" do google Fonst em diversos estilos e pasos*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Define variáveis globáis para cores e bordas, facilitando mantenção e ajustes futuros*/
+
 :root {
     --main-color:#da190f;
     --bg: hsla(167, 88%, 20%, 0.761);
@@ -7,6 +10,7 @@
     --border: 0.1rem solid grey;
 
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -20,11 +24,17 @@
     scroll-behavior: smooth;
 }   
 
+
+
+
+
 /* estelizando html */
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
+
 
 body {
     background: var(--bg); /*fundo de body color negro, esto color viene de arriba que esta dentro de root*/
@@ -35,13 +45,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 7%;
-    border-bottom: var(--border);
+    padding: 1.5rem 7%;/*explicação do uso da porcentagem*/
+    border-bottom: var(--border);/*esto biene de encima declarado border de root*/
     position: sticky;
     background: var(--bg);
     top: 0;
     left: 0;
     z-index: 999;
+
 
 }
 
@@ -49,6 +60,7 @@ header {
 .logo img {
     height: 6rem;/*define altura de logo*/
     border-radius: 100%;
+
 }
 
 .ul-header {
@@ -66,10 +78,13 @@ header {
     border-bottom: 0.1rem solid var(--main-color); /*adiciona uma linha inferior no hover*/
     padding-bottom: 0.5rem;/*adiciona espaçamento inferior no hover*/
 
+
+
 }
 
 .ul-header li {
     list-style: none;/*esto é para tirar os pontos nas listas*/
+
 
 }
 
@@ -87,9 +102,12 @@ header {
 
 }
 
+
+
 .icons i:hover {
     color: var(--main-color);/*muda a cor ícone ao passar o mause*/
 }
+
 
 #home {
     display: flex;
@@ -123,6 +141,15 @@ header {
     color: #fff /*cor da letra branca*/
 }
 
+
+
+
+
+
+
+
+
+
 /* https://www.w3schools.com/cssref/sel_before.php */
 
 #home::before {
@@ -137,6 +164,13 @@ header {
 
 }
 
+
+
+
+
+
+
+
 section {
     padding: 2rem 7%;/*garante espaçamento interno nas sessões (resposividade)*/
 
@@ -150,10 +184,13 @@ section {
     font-size: 4rem;
 }
 
+
+
 .heading span {
     color: var(--main-color);
     text-transform: uppercase;/*texto caiza alta*/
 }
+
 
 /*Estelizando botões*/
 .btn {
@@ -168,6 +205,10 @@ section {
 
 }
 
+
+ /* https/www.w3schools.com/css/tryit.asp?
+    filename=trycss_inline-block*/
+
 .btn:hover {
     letter-spacing: 0.2rem;/*espaçamento entre as letras ao passar mause*/
 
@@ -181,9 +222,16 @@ section {
     border: var(--border);/*aplioca uma borda ao da linha*/
 }
 
+
+
+
+
+
 .row .image {
     flex: 1 1 45rem;/*define o tamanho flexível do elemento: base 45rem, podendo crear ao encolher, ou seja, faz conque possaser adaptável para telas grandes e pequenas*/
 }
+
+                                                    
 
 .row .image img {
     width: 100%;/*faz com que a imagen ocupe toda a largura no container (.image)*/
@@ -194,10 +242,16 @@ section {
     padding: 2rem;/*Adicione espaçamento interno ao redor do conteúdo*/
 }
 
+
+
+
 .row .content h3 {
     font-size: 3rem;/*define o tamanho da fonte para o subtítulo*/
     color: #fff;/*cor da letra*/
 }
+
+
+
 
 .row .content p {
     font-size: 1.6rem;/*Define o tamanho da fonte para o parágrafo*/
@@ -205,6 +259,10 @@ section {
     padding: 1rem 0;/*adiciona espaçamento interno vertical ao texto e as laterais zeradas*/
     line-height: 1.8rem;/*define o espaçamento entre as linhas de um texto*/
 }
+
+
+
+
 
 /*estilizando clas menu juntando con container un solo*/
 .container {
@@ -233,7 +291,6 @@ section {
 }
 
 /*estilizando price (precios)*/
-
 .container .box .price {
     color: #fff;/*Define o tamanho da fonte para o preço original*/
     font-size: 2rem;/*Define o tamanho da fonte do preço*/
@@ -254,7 +311,6 @@ section {
 
 .container .box:hover>*{
     color: black;/*Altera a cor dos elementos filhos para preto ao passar mause*/
-
 }
 
 /*estilizando PROMOÇÕES*/
@@ -288,7 +344,7 @@ section {
 }
 
 .box .image {
-    padding: 2rem;/*adiciona espaçamento vertical*/
+    padding: 2rem 0;/*adiciona espaçamento vertical*/
 }
 
 .box .image img {
@@ -325,11 +381,16 @@ section {
     font-size: 2rem;/*define o tamanho da fuente*/
 }
 
+
+
+
+
+
 /*estelizando ultima parte de caixas*/
 /*formatação das caixas, aqui estamos mexendo elemento pai*/
 .review .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr ));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
 }
 
@@ -361,17 +422,18 @@ section {
     object-fit: cover;/*ajusta a imagem para preencher o espaço disponível/container sem distorção*/
 }
 
+
 .review .box-container .box .stars i {
     font-size: 1.7rem;
     color: var(--main-color);
 }
 
 #map-google {
-    width: 100vw;
-    height: 400px;
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px  rgba(0,0,0, 0.3);
-    border: 2px solid #4caf50;
+    border: 4px solid #0f0f0fcc;
     margin: 20px auto;
     overflow: hidden;
 }
